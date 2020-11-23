@@ -8,7 +8,7 @@
 
   <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">jQuery Fun</a>
+      <a class="navbar-brand" href="./index.html">jQuery Fun</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -28,7 +28,7 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Table</a>
+            <a class="nav-link" href="./table.html">Table</a>
           </li>
         </ul>
       </div>
@@ -39,23 +39,25 @@
         <div class="py-5 text-center">
           <h1>Forms</h1>
           <p class="lead">Examples of forms using bootstrap and jQuery features.</p>
+          <p>
+            All validation is through html constraints - required, minimum length. 
+            Pattern might also be useful. </p>
         </div>
       <section>
 
       <div class="row">
         <div class="col-md-8">
           <section>
-            <h2 class="mb-3">Input Form</h4>
+            <h2 class="mb-3">Basic Input Form</h4>
             <form id="example-form">
-              <h3>Basics</h3>
               <div class="row">
                 <div class="col-md-6 mb-3">
                   <label for="firstName">First name</label>
-                  <input type="text" name="first" class="form-control" id="firstName" placeholder="" value="" >
+                  <input type="text" name="first" class="form-control" value="" required minlength="2">
                 </div>
                 <div class="col-md-6 mb-3">
                   <label for="lastName">Last name</label>
-                  <input type="text" name="last" class="form-control" id="lastName" placeholder="" value="" >
+                  <input type="text" name="last" class="form-control" value="" required minlength="2" >
                 </div>
               </div>
               <div class="row">
@@ -68,22 +70,30 @@
                   </select>
                 </div>
               </div>
-              <ul>
-                <li>radio button</li>
-                <li>checkbox</li>
-              </ul>
+              <div class="d-block my-3">
+                <div class="custom-control custom-radio">
+                  <input id="credit" name="paymentMethod" type="radio" value='credit' class="custom-control-input" checked required>
+                  <label class="custom-control-label" for="credit">Credit card</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input id="debit" name="paymentMethod" type="radio" value='debit' class="custom-control-input" required>
+                  <label class="custom-control-label" for="debit">Debit card</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input id="paypal" name="paymentMethod" type="radio" value='paypal' class="custom-control-input" required>
+                  <label class="custom-control-label" for="paypal">PayPal</label>
+                </div>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" name="save-info" id="save-info">
+                <label class="custom-control-label" for="save-info">Save this information for next time</label>
+              </div>
               <hr class="mb-4">
               <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>      
             </form>
 
           </section>
 
-          <section>
-            <h2>validation</h2>
-            <ul>
-              <li>validation</li>
-            </ul>
-          </section>
           <section>
             <h2>animation and styling</h2>
             <ul>

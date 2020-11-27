@@ -11,7 +11,6 @@ function submitPanelShowValues(values) {
 }
 
 $(document).ready(function () {
-  console.log("ready!")
   $("#example-form").submit(function (event) {
     event.preventDefault();
     const values = $(this).serializeArray();

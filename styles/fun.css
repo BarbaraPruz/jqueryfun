@@ -1,3 +1,15 @@
 .intro {
   height: 100vh;
 }
+
+.submission {
+  border-left: 2px solid #DCDCDC;
+}
+
+.tbl-header {
+  background: #DCDCDC;
+}
+
+.a,.b,.c{
+  text-align: center;
+}

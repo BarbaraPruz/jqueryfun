@@ -52,7 +52,7 @@ class Table {
   }
 
   addHeader = () => {
-    let row = $("<tr/>");
+    let row = $("<tr class='tbl-header' />");
     row.append($("<th class='a'>").text('A'));
     row.append($("<th class='b'>").text('B'));
     row.append($("<th class='c'>").text('C'));

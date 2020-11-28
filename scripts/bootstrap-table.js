@@ -23,6 +23,8 @@ function buildTable($el) {
     columns: columns,
     data: data,
     detailView: true,
+    detailFormatter: detailFormatter,
+    showColumns: true
   })
 }
 
@@ -33,4 +35,5 @@ function detailFormatter(index, row) {
 $(document).ready(function () {
   var $table = $('#table')
   buildTable($table)
+  $('.dataTables_length').addClass('bs-select');
 })

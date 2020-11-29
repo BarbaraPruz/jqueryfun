@@ -9,8 +9,8 @@ function buildTable($el) {
   let data = []
   const columns = [
     {field:'state',title:'State',sortable: true},
-    {field:'abbr',title:'Abbreviation',sortable: true},
-    {field:'city',title:'City!',sortable: true},
+    {field:'abbr',title:'Abbreviation',sortable: true, width: 50},
+    {field:'city',title:'City',sortable: true},
   ]
   list.forEach((s) => {
     row = {};
@@ -33,7 +33,7 @@ function detailFormatter(index, row) {
 }
 
 $(document).ready(function () {
-  var $table = $('#table')
+  var $table = $('#btbl')
   buildTable($table)
   $('.dataTables_length').addClass('bs-select');
 })

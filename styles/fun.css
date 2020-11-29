@@ -4,12 +4,22 @@
 
 .submission {
   border-left: 2px solid #DCDCDC;
-}
-
+} 
+/* html table demo */
 .tbl-header {
-  background: #DCDCDC;
+  background: #2be4f1;
 }
 
 .a,.b,.c{
   text-align: center;
+}
+
+#table table, #table th, #table td {
+  border: 1px solid black;
+}
+
+/* bootstrap table demo */
+.btbl-header th{
+  background: #2be4f1;
+  text-transform: uppercase;
 }

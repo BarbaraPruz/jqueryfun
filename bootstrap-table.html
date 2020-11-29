@@ -8,6 +8,7 @@
       href="libs/bootstrap-table/bootstrap-table.min.css"
       rel="stylesheet"
     />
+    <link href="styles/fun.css" rel="stylesheet">
   </head>
 
   <body>
@@ -54,15 +55,17 @@
       </div>
     </nav>
     <main>
-      <section class="intro container p-3">
-        <div class="py-5 text-center">
+      <section class="container p-3">
+        <div class="py-5 mt-2 text-center">
           <h1>Bootstrap table example</h1>
         </div>
       </section>
       <section class="container">
         <table
-          id="table"
+          id="btbl"
           data-search="true"
+          data-classes="table table-bordered table-hover btbl-header"
+          data-icon-size="sm"
         >
         </table>
       </section>
